@@ -5,11 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 81.90.25.152
-  port: 34302
+  server: 104.21.24.95
+  port: 443
   udp: true
-  type: vless
-  uuid: e9a7f2c2-51bd-4a81-de35-26b369e2585b
+  type: trojan
+  password: Telegram_healer_config
+  sni: 1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /tr/zJi4ccv7FeEo780U?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select
