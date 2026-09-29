@@ -7,11 +7,11 @@
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe",
       "server": "188.114.97.6",
-      "server_port": 8080,
+      "server_port": 2086,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/",
         "headers": {
           "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
         }
