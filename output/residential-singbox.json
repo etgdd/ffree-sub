@@ -6,19 +6,19 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
-      "server": "aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com",
+      "server": "5e367597-tmm5c0-typ01r-1p0be.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "526a1128-7487-11ee-9bca-f23c913c8d2b",
+      "password": "55cce5a4-56b7-11ee-af82-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com",
-        "insecure": true
+        "server_name": "5e367597-tmm5c0-typ01r-1p0be.hk3.hyhuawei.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-      "server": "104.20.36.205",
+      "server": "argo6.5671234.xyz",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
