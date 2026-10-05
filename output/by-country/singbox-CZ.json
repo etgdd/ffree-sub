@@ -5,16 +5,12 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "hikvision-plus.com",
-      "server_port": 2052,
-      "uuid": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "kayoor.hivaphone.ir",
+      "server_port": 2045,
+      "uuid": "d7e99010-e7c3-4978-9d30-2e63882dcfbe",
       "transport": {
-        "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
-        }
+        "type": "http"
       }
     },
     {
@@ -22,14 +18,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
