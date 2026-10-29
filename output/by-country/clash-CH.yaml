@@ -5,27 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 156.229.163.237
-  port: 10238
-  udp: true
-  type: vless
-  uuid: 17f9b0bf-f8e5-4b6a-8c51-564ee29d0048
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   server: 132.243.175.144
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 208.69.78.217
   port: 2053
@@ -51,31 +44,6 @@ proxies:
     short-id: 16036bbef04d0509
   servername: twitch.tv
   client-fingerprint: safari
-- name: 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  server: 149.33.15.213
-  port: 443
-  udp: true
-  type: vless
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
-  tls: true
-  servername: swz.proxyplankton.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
-  server: 144.31.135.38
-  port: 9444
-  udp: true
-  type: vless
-  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,8 +53,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,7 +62,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   - 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 05 - xiaohe
-  - 🇨🇭 瑞士 (Switzerland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
