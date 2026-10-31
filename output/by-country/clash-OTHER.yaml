@@ -5,16 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.18.192.53
-  port: 443
+  server: n04.jinggai.online
+  port: 8443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  tls: true
+  servername: n04.jinggai.online
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: /nvl-n04-ws/e0577fe8fd7c8823
+    headers:
+      Host: n04.jinggai.online
 proxy-groups:
 - name: PROXIES
   type: select
