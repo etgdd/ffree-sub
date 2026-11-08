@@ -25,12 +25,12 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaohe
-  server: 82.152.132.211
-  port: 8044
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: dCamglzrORaopqbpBlptzbt9QdiH4CSN
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
