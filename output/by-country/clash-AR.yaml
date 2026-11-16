@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 5.253.42.164
-  port: 40443
+- name: 🇦🇷 阿根廷 (Argentina) 01 - xiaohe
+  server: 186.122.177.79
+  port: 443
   udp: true
   type: vless
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
+    public-key: pBEW9XYZQsXxjgt44pCQcxoEOe-B1CdxaTdTnL2QhAA
+    short-id: a5d67406
+  servername: ar1.gofizz.in
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇦🇷 阿根廷 (Argentina) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
+  - 🇦🇷 阿根廷 (Argentina) 01 - xiaohe
 rules:
 - MATCH,PROXIES
